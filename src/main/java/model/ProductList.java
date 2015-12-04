@@ -14,6 +14,10 @@ public class ProductList extends ArrayList<Product> implements fpt.com.ProductLi
 		return super.add(product);
 	}
 	@Override
+	public boolean delete(fpt.com.Product product) {
+		return super.remove(o);
+	}
+	@Override
 	public int size() {
 		return super.size();
 	}
@@ -30,11 +34,7 @@ public class ProductList extends ArrayList<Product> implements fpt.com.ProductLi
 		return null;
 	}
 
-	@Override
-	public boolean delete(fpt.com.Product product) {
-		// TODO Auto-generated method stub
-		return false;
-	}
+	
 
 
 

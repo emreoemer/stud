@@ -37,13 +37,13 @@ public class Order extends ArrayList<Product> implements fpt.com.Order{
 
 	@Override
 	public Product findProductById(long id) {
-		// TODO Auto-generated method stub
+		// TODO Order findById
 		return null;
 	}
 
 	@Override
 	public Product findProductByName(String name) {
-		// TODO Auto-generated method stub
+		// TODO Order findByName
 		return null;
 	}
 

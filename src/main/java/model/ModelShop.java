@@ -2,7 +2,6 @@ package model;
 
 
 import javafx.collections.ModifiableObservableListBase;
-import javafx.collections.ObservableList;
 import fpt.com.Product;
 
 @SuppressWarnings("serial")
@@ -10,15 +9,10 @@ public class ModelShop extends ModifiableObservableListBase<Product> implements 
 	
 	private ProductList productList;
 	
-	/*public ObservableList<fpt.com.Product> getStrings(){
-		return this;
-	}*/
-	
 	public ModelShop(ProductList productList){
 		this.productList = productList;
 	}
 
-	
 	@Override
 	protected void doAdd(int arg0, Product product) {
 		productList.add(product);
@@ -38,14 +32,12 @@ public class ModelShop extends ModifiableObservableListBase<Product> implements 
 
 	@Override
 	public Product findProductById(long id) {
-		// TODO Auto-generated method stub
-		return null;
+		return productList.findProductById(id);
 	}
 
 	@Override
 	public Product findProductByName(String name) {
-		// TODO Auto-generated method stub
-		return null;
+		return productList.findProductByName(name);
 	}
 
 	@Override
