@@ -15,7 +15,7 @@ public class ProductList extends ArrayList<Product> implements fpt.com.ProductLi
 	}
 	@Override
 	public boolean delete(fpt.com.Product product) {
-		return super.remove(o);
+		return super.remove(product);
 	}
 	@Override
 	public int size() {

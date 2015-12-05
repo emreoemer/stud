@@ -6,6 +6,7 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import model.ModelShop;
 import model.ProductList;
+import view.ViewCustomer;
 import view.ViewShop;
 
 /**
@@ -23,6 +24,8 @@ public class Main extends Application{
 	public void start(Stage primaryStage){
 		
 		ViewShop view = new ViewShop();
+		ViewCustomer viewC = new ViewCustomer();
+		
 		ProductList p = new ProductList();
 		ModelShop model = new ModelShop(p);
 		
@@ -31,9 +34,14 @@ public class Main extends Application{
 		cs.link(model, view);
 		
 		Scene s = new Scene(view);
+		Scene s1 = new Scene(viewC);
+		
+		Stage stage = new Stage();
+		stage.setScene(s1);
+		
 		primaryStage.setScene(s);
 		primaryStage.show();
-		
+		stage.show();
 	}
 
 }
